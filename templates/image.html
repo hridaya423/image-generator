@@ -1,0 +1,204 @@
+<!-- FILEPATH: /d:/Honey/Python/MindsDB/image-generator/templates/index.html -->
+<!DOCTYPE html>
+            <html lang="en">
+              <head>
+                <meta charset="UTF-8" />
+                <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1.0"
+                />
+                <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+                <title>Image Generator</title>
+                <link
+                  rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css"
+                />
+              </head>
+              <body class="bg-gray-100">
+                <nav class="bg-white shadow">
+                  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex justify-between h-16">
+                      <div class="flex">
+                        <a href="#" class="flex-shrink-0 flex items-center">
+                          <img
+                            class="block lg:hidden h-8 w-auto"
+                            src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                            alt="Workflow"
+                          />
+                          <img
+                            class="hidden lg:block h-8 w-auto"
+                            src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
+                            alt="Workflow"
+                          />
+                        </a>
+                        <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                          <a
+                            href="/"
+                            class="px-3 py-2 rounded-md text-sm font-medium text-gray-900 hover:text-gray-700 focus:outline-none focus:text-gray-700"
+                            >Home</a
+                          >
+                          <a
+                            href="#"
+                            class="px-3 py-2 rounded-md text-sm font-medium text-gray-900 hover:text-gray-700 focus:outline-none focus:text-gray-700"
+                            >Gallery</a
+                          >
+                          <a
+                            href="#"
+                            class="px-3 py-2 rounded-md text-sm font-medium text-gray-900 hover:text-gray-700 focus:outline-none focus:text-gray-700"
+                            >About</a
+                          >
+                          <a
+                            href="#"
+                            class="px-3 py-2 rounded-md text-sm font-medium text-gray-900 hover:text-gray-700 focus:outline-none focus:text-gray-700"
+                            >Contact</a
+                          >
+                        </div>
+                      </div>
+                      <div class="-mr-2 flex items-center sm:hidden">
+                        <button
+                          type="button"
+                          class="bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                          aria-expanded="false"
+                        >
+                          <span class="sr-only">Open main menu</span>
+                          <!-- Heroicon name: menu -->
+                          <svg
+                            class="block h-6 w-6"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M4 6h16M4 12h16M4 18h16"
+                            />
+                          </svg>
+                          <!-- Heroicon name: x -->
+                          <svg
+                            class="hidden h-6 w-6"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M6 18L18 6M6 6l12 12"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="hidden sm:hidden">
+                    <div class="px-2 pt-2 pb-3 space-y-1">
+                      <a
+                        href="#"
+                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-gray-500 focus:outline-none focus:text-gray-500"
+                        >Home</a
+                      >
+                      <a
+                        href="#"
+                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-gray-500 focus:outline-none focus:text-gray-500"
+                        >Gallery</a
+                      >
+                      <a
+                        href="#"
+                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-gray-500 focus:outline-none focus:text-gray-500"
+                        >About</a
+                      >
+                      <a
+                        href="#"
+                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-gray-500 focus:outline-none focus:text-gray-500"
+                        >Contact</a
+                      >
+                    </div>
+                  </div>
+                </nav>
+
+                <header class="bg-white shadow">
+                  <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                    <h1 class="text-3xl font-bold leading-tight text-gray-900">
+                      Image Generator
+                    </h1>
+                  </div>
+                </header>
+
+                <main>
+                  <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+                    <div class="px-4 py-6 sm:px-0">
+                      <div
+                        class="border-4 border-dashed border-gray-200 rounded-lg h-96"
+                      ><img url={{image}} /></div>
+                    </div>
+                  </div>
+                </main>
+
+                <footer class="bg-white shadow">
+                  <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                    <div class="flex justify-center space-x-6">
+                      <a href="#" class="text-gray-400 hover:text-gray-500">
+                        <span class="sr-only">Facebook</span>
+                        <svg
+                          class="h-6 w-6"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                        >
+                          <path
+                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 5.168 3.876 9.43 8.889 9.949v-7.053H7.5v-2.875h3.389V9.275c0-3.357 2.005-5.2 5.048-5.2 1.464 0 2.723.109 3.086.158v3.497l-2.113.001c-1.659 0-1.984.788-1.984 1.938v2.543h3.969l-.518 2.875h-3.45v7.053C18.124 21.43 22 17.168 22 12z"
+                          />
+                        </svg>
+                      </a>
+
+                      <a href="#" class="text-gray-400 hover:text-gray-500">
+                        <span class="sr-only">Twitter</span>
+                        <svg
+                          class="h-6 w-6"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                        >
+                          <path
+                            d="M23.998 4.572c-.885.388-1.83.654-2.824.773a4.68 4.68 0 0 0 2.052-2.58 9.352 9.352 0 0 1-2.974 1.138A4.67 4.67 0 0 0 16.53 2.4c-2.586 0-4.677 2.09-4.677 4.67 0 .366.042.72.124 1.06C8.74 7.98 4.63 5.28 1.88 1.74.14 4.032.89 6.686 2.57 8.39a4.703 4.703 0 0 1-2.117-.583v.06c0 2.04 1.445 3.74 3.363 4.13-.352.09-.723.14-1.11.14-.272 0-.54-.027-.8-.08.54 1.68 2.09 2.9 3.93 2.93a9.438 9.438 0 0 1-5.81 2.002c-.38 0-.76-.02-1.13-.06a13.28 13.28 0 0 0 7.19 2.105c8.606 0 13.31-7.13 13.31-13.31 0-.202-.005-.405-.015-.607.91-.66 1.7-1.48 2.33-2.42l-.047-.02z"
+                          />
+                        </svg>
+                      </a>
+
+                      <a href="#" class="text-gray-400 hover:text-gray-500">
+                        <span class="sr-only">GitHub</span>
+                        <svg
+                          class="h-6 w-6"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M12 2C6.48 2 2 6.48 2 12C2 16.42 5.63 20.26 10.5 21.58C10.86 21.66 11 21.38 11 21.16V19.66C8.39 20.14 7.82 18.5 7.82 18.5C7.34 17.39 6.63 17.09 6.63 17.09C5.53 16.5 6.75 16.5 6.75 16.5C7.64 16.53 8.19 17.34 8.19 17.34C8.91 18.5 10.03 18.14 10.56 17.86C10.69 17.03 11.11 16.5 11.55 16.2C8.37 15.9 5.13 14.79 5.13 10.58C5.13 9.39 5.57 8.43 6.25 7.68C6.09 7.41 5.73 6.5 6.25 5.13C6.25 5.13 7.34 4.86 9.98 6.5C10.98 6.23 12 6.09 13.02 6.09C14.04 6.09 15.06 6.23 16.06 6.5C18.7 4.86 19.78 5.13 19.78 5.13C20.3 6.5 19.93 7.41 19.78 7.68C20.46 8.43 20.89 9.39 20.89 10.58C20.89 14.8 17.64 15.9 14.46 16.2C14.96 16.56 15.46 17.39 15.46 18.58V21.16C15.46 21.39 15.59 21.67 15.96 21.58C20.87 20.25 24 16.41 24 12C24 6.48 19.52 2 14 2H12Z"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <p class="mt-8 text-center text-base text-gray-400">
+                      Built with Python, MindsDB, OpenAI, and TailwindCSS
+                    </p>
+                  </div>
+                </footer>
+              </body>
+            </html>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
