@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 from backend import project
-from flask_bootstrap import Bootstrap5  
-
+from flask_bootstrap import Bootstrap5
+from pandas as pd
 from flask_wtf import FlaskForm, CSRFProtect
 from wtforms import StringField, SubmitField, SelectField, widgets
 from wtforms.validators import InputRequired, Length
@@ -45,9 +45,9 @@ def results():
             'prompt_template':'{{text}}, 8K | highly detailed realistic 3d oil painting style cyberpunk by MAD DOG JONES combined with Van Gogh | cinematic lighting | happy colors',
             'mode':'image'
         }
-    )   
-    image = dalle_model.predict({ 'text': prompt })
-    print(image)
+    )
+    df = pd.DataFrame({'text': [prompt]})
+    image = dalle_model.predict(df)
     return render_template('image.html', image=image)
 
 
